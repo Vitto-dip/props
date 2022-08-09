@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+import Cubiculos from './components/cubiculos'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header> 
+        <h1>Estudando ReactJS | Componentes</h1>
       </header>
-    </div>
+
+      <main className='div-pt1'> 
+        <Cubiculos alinhamento='secao1' titulo="Seção 01" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex odio, varius non maximus at, consectetur non purus. Ut nec ullamcorper nisl, non porttitor dui." img="https://cdn.discordapp.com/attachments/929044199045726309/1006627219319304293/unknown.png"/>
+      
+        <Cubiculos alinhamento='secao2' titulo="Seção 02" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex odio, varius non maximus at, consectetur non purus. Ut nec ullamcorper nisl, non porttitor dui." img="https://cdn.discordapp.com/attachments/929044199045726309/1006627219319304293/unknown.png"/>
+
+        <Cubiculos alinhamento='secao3' titulo="Seção 3" texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ex odio, varius non maximus at, consectetur non ." img="https://cdn.discordapp.com/attachments/929044199045726309/1006627219319304293/unknown.png"/>
+        
+      </main>
+    </div> 
   );
 }
 
